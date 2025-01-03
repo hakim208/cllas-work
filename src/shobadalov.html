@@ -1,11 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/src/output.css">
 </head>
+
 <body>
-    <h1></h1>
+    <header class="bg-white shadow-md w-full h-[600px]">
+        <div class="px-4 py-4 flex justify-between items-center bg-white">
+            <div class="flex items-center">
+                <img src="/shobaimg/windom logo 4.png" alt="" class="h-10 w-10">
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <ul class="flex space-x-6 text-gray-700">
+                    <li class="hover:text-[#EFA359] cursor-pointer">Наши проекты</li>
+                    <li class="hover:text-[#EFA359] cursor-pointer">Дома</li>
+                    <li class="hover:text-[#EFA359] cursor-pointer">Ипотека</li>
+                    <li class="hover:text-[#EFA359] cursor-pointer">О компании</li>
+                    <li class="hover:text-[#EFA359] cursor-pointer">Контакты</li>
+                </ul>
+            </nav>
+            <div class="hidden md:flex space-x-4 items-center">
+                <div class="text-gray-700">+7 (962) 555-25-25</div>
+                <button class="border-2 border-[#EFA359] text-black px-6 py-2 rounded-md">Заказать звонок</button>
+            </div>
+            <button class="md:hidden text-gray-700">
+                <p class="block md:hidden">☰</p>
+            </button>
+        </div>
+        <section class="relative text-white w-full h-[600px] " id="backg">
+            <div class="relative bg-cover bg-center h-screen" style="background-image: url('your-image-url.jpg');">
+                <div
+                    class="absolute inset-0 bg-black bg-opacity-30 flex flex-col justify-center items-center text-center p-4 sm:p-8 h-[600px]">
+                    <h1 class="text-white text-5xl font-bold lg:text-8xl">ИПОТЕКА ОТ <br class="block lg:hidden"><span
+                            class="bg-white text-[#EFA359] px-4 lg:px-4 lg:py-0 lg:mt-[0]">4%</span></h1>
+                    <p class="text-white text-sm sm:text-lg mt-4 sm:mt-6">
+                        Уникальные ипотечные программы на специальных условиях.<br class="hidden sm:block">
+                        Просто заполните анкету и получите одобрение.
+                    </p>
+                    <p class="text-white text-sm sm:text-xl font-semibold mt-4 sm:mt-6">
+                        Всего шаг — до дома вашей мечты!
+                    </p><br>
+                    <button
+                        class="border-2 border-[#EFA359] text-sm ml-[-30px] text-[#EFA359] px-6 py-3 rounded-md font-semibold shadow-md hover:bg-[#EFA359] hover:text-white transition text-center">Расчитать
+                        платёж</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="max-w-screen-xl mx-auto p-4 flex mt-[120px] justify-center gap-[50px] flex-col lg:flex-row">
+        <section class="bg-white rounded-lg shadow-md p-4 sm:p-6 mb-8 w-[500px]">
+            <h1 class="text-2xl font-bold text-gray-800 mb-6">ИПОТЕКА</h1>
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-1 mb-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Вид недвижимости</label>
+                    <select class="w-full p-2 border border-gray-300 rounded">
+                        <option>Все</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Проект</label>
+                    <select class="w-full p-2 border border-gray-300 rounded">
+                        <option>Все</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Вид ипотеки</label>
+                    <select class="w-full p-2 border border-gray-300 rounded">
+                        <option>Все</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-1 mb-6">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Стоимость</label>
+                    <input type="text" class="w-full p-2 border border-gray-300 rounded" value="3 000 000 ₽">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Первоначальный взнос</label>
+                    <div class="flex items-center">
+                        <input type="range" class="w-full">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Ежемесячный платёж</label>
+                    <div class="flex items-center">
+                        <input type="range" class="w-full">
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="bg-[#EFA359] text-white px-6 py-2 rounded shadow hover:bg-[#d69350]">
+                    Рассчитать платёж
+                </button>
+            </div>
+        </section>
+        <section class="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
+            <div class="flex items-center bg-white rounded-lg shadow-md p-4">
+                <div class="flex flex-col gap-[12px]">
+                    <h3 class="text-lg font-semibold text-gray-800">АО "Альфа-банк"</h3>
+                    <p class="text-gray-500">Ставка</p>
+                    <p class="text-2xl font-bold text-black">4,1%</p>
+                    <p class="text-gray-500">от 4 000 ₽ / мес</p>
+                    <p class="text-gray-500 mt-2">Программа: Семейная</p>
+                </div>
+            </div>
+            <div class="flex items-center bg-white rounded-lg shadow-md p-4">
+                <div class="flex-1 flex flex-col gap-[12px]">
+                    <h3 class="text-lg font-semibold text-gray-800">Банк ВТБ (ПАО)</h3>
+                    <p class="text-gray-500">Ставка</p>
+                    <p class="text-2xl font-bold text-black">6%</p>
+                    <p class="text-gray-500">от 4 000 ₽ / мес</p>
+                    <p class="text-gray-500 mt-2">Программа: Господдержка</p>
+                </div>
+            </div>
+            <div class="flex items-center bg-white rounded-lg shadow-md p-4">
+                <div class="flex-1 flex flex-col gap-[12px]">
+                    <h3 class="text-lg font-semibold text-gray-800">ПАО Сбербанк</h3>
+                    <p class="text-gray-500">Ставка</p>
+                    <p class="text-2xl font-bold text-black">4%</p>
+                    <p class="text-gray-500">от 4 000 ₽ / мес</p>
+                    <p class="text-gray-500 mt-2">Программа: IT специалисты</p>
+                </div>
+            </div>
+            <div class="flex items-center bg-white rounded-lg shadow-md p-4">
+                <div class="flex-1 flex flex-col gap-[12px]">
+                    <h3 class="text-lg font-semibold text-gray-800">ПАО "Совкомбанк"</h3>
+                    <p class="text-gray-500">Ставка</p>
+                    <p class="text-2xl font-bold text-black">4%</p>
+                    <p class="text-gray-500">от 4 000 ₽ / мес</p>
+                    <p class="text-gray-500 mt-2">Программа: Семейная</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="max-w-screen-xl mx-auto p-4 grid gap-6 grid-cols-1">
+        <div class="bg-gray-100 p-6 shadow-md rounded-md flex flex-col md:flex-row items-center justify-between h-[700px] lg:h-[300px]">
+            <div class="md:w-1/2 md:mr-6">
+                <h2 class="text-xl font-bold mb-2">IT СПЕЦИАЛИСТАМ</h2>
+                <p class="text-gray-700 mb-4">Оформить ипотеку по сниженной ставке может гражданин России,<br>
+                    трудоустроенный в компании, которая работает в сфере информационных технологий. Возраст — от 18 до
+                    50 лет включительно. Стаж — не менее 3 месяцев на текущем месте работы.</p>
+                <button class="bg-[#EFA359] text-white px-6 py-2 rounded shadow hover:bg-[#d69350]">
+                    Рассчитать платёж
+                </button>
+            </div>
+            <div class="md:w-1/2">
+                <img src="/shobaimg/Rectangle 144.png" alt="" class="w-full rounded-md scale-[85%] mx-auto md:scale-[55%] md:ml-[100px]">
+            </div>
+        </div>
+    </section>
+    <section class="max-w-screen-xl mx-auto p-4 grid gap-6 grid-cols-1 md:grid-cols-2 hidden lg:flex">
+        <div class="bg-gray-100 p-6 shadow-md rounded-md flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2">
+                <h2 class="text-xl font-bold mb-2">СЕМЕЙНАЯ ИПОТЕКА</h2><br>
+                <p class="text-gray-700 mb-4">Воспользоваться программой «Семейная ипотека» возможно до 1 июля 2024 года при<br>
+                    рождении первого ребенка или последующих детей.</p><br>
+                <button class="bg-[#EFA359] text-white px-6 py-2 rounded shadow hover:bg-[#d69350]">
+                    Рассчитать платёж
+                </button>
+            </div>
+            <div class="md:w-1/2 md:mr-4">
+                <img src="/shobaimg/Rectangle 147 (1).png" alt="" class="w-full rounded-md scale-[85%] mx-auto md:scale-100">
+            </div>
+        </div>
+        <div class="bg-gray-100 p-6 shadow-md rounded-md flex flex-col md:flex-row items-center hidden lg:flex">
+            <div class="md:w-1/2">
+                <h2 class="text-xl font-bold mb-2">ГОСПОДДЕРЖКА 2023</h2><br>
+                <p class="text-gray-700 mb-4">Ипотеку с господдержкой могут получить граждане России, у которых есть<br>
+                    постоянная регистрация, официальная работа и стабильный доход.</p><br>
+                <button class="bg-[#EFA359] text-white px-6 py-2 rounded shadow hover:bg-[#d69350]">
+                    Рассчитать платёж
+                </button>
+            </div>
+            <div class="md:w-1/2 md:mr-4">
+                <img src="/shobaimg/Rectangle 147.png" alt="" class="w-full rounded-md scale-[85%] mx-auto md:scale-100">
+            </div>
+        </div>
+    </section>
+    <section class="max-w-screen-xl mx-auto p-4 grid gap-6 grid-cols-1">
+        <div class="bg-gray-100 p-6 shadow-md rounded-md flex flex-col md:flex-row items-center justify-between h-[700px] lg:h-[300px]">
+            <div class="md:w-1/2 md:mr-6">
+                <h2 class="text-xl font-bold mb-2">IT СПЕЦИАЛИСТАМ</h2>
+                <p class="text-gray-700 mb-4">Оформить ипотеку по сниженной ставке может гражданин России,<br>
+                    трудоустроенный в компании, которая работает в сфере информационных технологий. Возраст — от 18 до
+                    50 лет включительно. Стаж — не менее 3 месяцев на текущем месте работы.</p>
+                <button class="bg-[#EFA359] text-white px-6 py-2 rounded shadow hover:bg-[#d69350]">
+                    Рассчитать платёж
+                </button>
+            </div>
+            <div class="md:w-1/2">
+                <img src="/shobaimg/Rectangle 144.png" alt="" class="w-full rounded-md scale-[85%] mx-auto md:scale-[55%] md:ml-[100px]">
+            </div>
+        </div>
+    </section>
+    <section class="max-w-screen-xl mx-auto p-4 mt-[50px]">
+        <h1 class="text-2xl md:text-4xl font-bold text-gray-900 mb-6">
+            ОТВЕТЫ НА <span class="text-[#EFA35A]">ВОПРОСЫ</span>
+        </h1>
+        <aside class="grid grid-cols-1 gap-4 md:grid-cols-1 lg:grid-cols-1">
+            <div class="bg-white p-6 shadow-md rounded-lg flex flex-col">
+                <h2 class="text-lg font-bold mb-2">Можно ли использовать материнский капитал для первоначального взноса?</h2>
+                <p class="text-gray-700 text-sm mb-4">
+                    Да, возможно. Если средств материнского капитала не хватает для первоначального взноса, то вы можете добавить собственные средства.
+                </p>
+                <button class="ml-auto">
+                </button>
+            </div>
+            <div class="bg-white p-6 shadow-md rounded-lg flex flex-col">
+                <h2 class="text-lg font-bold mb-2">Нужно ли привозить бумажные документы или все можно отправить электронно?</h2>
+                <p class="text-gray-700 text-sm mb-4">
+                    Для подачи заявки на ипотеку достаточно сканов или фото всех документов. Анкету на кредит также можно подписать дистанционно.
+                </p>
+                <button class="ml-auto">
+                </button>
+            </div>
+            <div class="bg-white p-6 shadow-md rounded-lg flex flex-col">
+                <h2 class="text-lg font-bold mb-2">Есть ли требования к гражданству?</h2>
+                <p class="text-gray-700 text-sm mb-4">
+                    По стандартным программам требования к гражданству нет. Ипотека с Господдержкой и Семейная ипотека распространяется только на граждан РФ.
+                </p>
+                <button class="ml-auto">
+                </button>
+            </div>
+            <div class="bg-white p-6 shadow-md rounded-lg flex flex-col">
+                <h2 class="text-lg font-bold mb-2">Я работаю неофициально. У меня есть шанс получить ипотеку?</h2>
+                <p class="text-gray-700 text-sm mb-4">
+                    Да, ипотеку получить возможно. Практически все наши банки-партнеры могут рассмотреть заявку на ипотечный кредит на двух документах, без предоставления документов о трудоустройстве.
+                </p>
+                <button class="ml-auto">
+                </button>
+            </div>
+        </aside>
+    </section>
+    <footer class="bg-[#323232] text-white py-6 mt-[150px]">
+        <div class="max-w-screen-xl mx-auto px-4 grid grid-cols-1 gap-8 md:grid-cols-4">
+          <div>
+            <h3 class="font-bold mb-4">О КОМПАНИИ</h3>
+            <ul class="space-y-2">
+              <li class="text-sm hover:underline">Главная</a></li>
+              <li class="text-sm hover:underline">Наша команда</a></li>
+              <li class="text-sm hover:underline">СМИ о нас</a></li>
+              <li class="text-sm hover:underline">Отзывы</a></li>
+              <li class="text-sm hover:underline">Новости</a></li>
+              <li class="text-sm hover:underline">Контакты</a></li>
+              <li class="text-sm hover:underline">Политика конфиденциальности</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold mb-4">ПРОЕКТЫ</h3>
+            <ul class="space-y-2">
+              <li class="text-sm hover:underline">Изумрудный Village</a></li>
+              <li class="text-sm hover:underline">IQ-CLUB</a></li>
+              <li class="text-sm hover:underline">Все проекты</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold mb-4">ИПОТЕКА</h3>
+            <ul class="space-y-2">
+              <li class="text-sm hover:underline">Ипотечные кредиты</a></li>
+              <li class="text-sm hover:underline">Для семей с детьми</a></li>
+              <li class="text-sm hover:underline">Военная ипотека</a></li>
+              <li class="text-sm hover:underline">Господдержка 2023</a></li>
+            </ul>
+          </div>
+          <div class="flex flex-col items-start">
+            <div class="mb-4">
+              <img src="/shobaimg/windom logo 3.png" alt="" class="w-36">
+            </div><br>
+            <p class="text-sm border-2 border-white p-2">windom.kazan@gmail.com</p>
+          </div>
+        </div>
+      </footer>
 </body>
+
 </html>
