@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+#backg {
+    background-image: url(/shobaimg/Rectangle\ 139.png);
+}
