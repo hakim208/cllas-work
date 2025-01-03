@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.back{
-    background-image: url("./Bezhans.img/Rectangle\ 37.png");
-    
-}
+ header{
+    background-image: url(./Rectangle\ 37.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+ }
