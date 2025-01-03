@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.zulayho{
+    background-image:url("./shohrukh.img/Rectangle 37.png");
+}
+.zulayho2{
+    background-image: url("./shohrukh.img/Rectangle 189.png");
+}
